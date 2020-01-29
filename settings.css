@@ -1,0 +1,71 @@
+/* CSS Variables */
+
+/* color palet */
+
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    --arun: #f30c13;
+    --arun-shadow: 2px 2px #dede16;
+    --arun-comp1: #1616de;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+
+}
+
+/* Sticky navbar */
+
+#navbar {
+    overflow: hidden;
+    background-color: #444;
+  }
+  
+  #navbar a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 5px;
+  }
+  
+  #navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  #navbar a.active {
+    background-color: #fff;
+    color: black;
+  }
+  
+  .content {
+    padding: 16px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+/* End of navbar*/
+
+/*h1 header format*/
+  .header h1 {
+    color: var(--arun);
+    text-shadow: var(--arun-shadow);
+    font-size: 50vm;
+    margin-bottom: 0;  
+  }

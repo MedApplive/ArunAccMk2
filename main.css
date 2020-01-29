@@ -1,0 +1,128 @@
+body {
+    
+    margin: 0;
+  }
+  
+      .sidebar {
+          grid-area: sidebar;
+
+      }
+  
+      .sidebar2 {
+          grid-area: sidebar2;
+      }
+  
+      .content {
+          grid-area: content;
+
+      }
+
+      .info {
+        grid-area: info;
+      }
+  
+      .header {
+          grid-area: header;
+      }
+  
+      .footer {
+          grid-area: footer;
+      }
+  
+      .wrapper {
+          display: grid;
+          background-color: #fff;
+          color: #444;
+      }
+  
+      .wrapper {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-areas:
+        "header"
+        "sidebar"
+        "content"
+        "sidebar2"
+        "info"
+        "footer"
+      }
+  
+      @media only screen and (min-width: 500px)  {
+      .wrapper {
+  
+          grid-template-columns: 20% auto;
+          grid-template-areas:
+          "header   header"
+          "sidebar  content"
+          "sidebar2 sidebar2"
+          "info info"
+          "footer   footer";
+      }
+      }
+  
+      @media only screen and (min-width: 600px)   {
+          .wrapper {
+        grid-gap: 20px;
+              grid-template-columns: 1fr auto 1fr;
+              grid-template-rows: auto;
+              grid-template-areas:
+              "header  header  header"
+              "sidebar content sidebar2"
+              "info info info"
+              "footer  footer  footer";
+              max-width: auto;
+          }
+      }
+  
+  .box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px; 
+  }
+
+  .box1 {
+    padding: 10px;
+  }
+  
+  .header {
+    grid-area: header;    
+    background-image: url("img/account1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 3rem;
+    background-position: center;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    box-shadow: var(--shadow);
+  }
+
+  .header h1 {
+    color: var(--arun);
+    text-shadow: var(--arun-shadow);
+    font-size: 50vm;
+    margin-bottom: 0;  
+  }
+
+  .header span {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+
+  }
+  
+  .sidebar2 {
+    background-color: #ccc;
+    color: #444;
+  }
+
+  .info {
+    color: #444;
+  }
+
+  .footer {
+    color: var(--light);
+
+  }
